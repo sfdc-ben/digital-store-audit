@@ -13,6 +13,9 @@ Any business with a checklist or rating form should review this Flow Template to
 
 ◆ Once the data is stored in Salesforce, you can provide real-time insight with standard Reports & Dashboards or further automate your business processes
 
+## AppExchange Listing
+https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FMkOtUAL
+
 ## Download Sample Data (Grocery Store Audit Configuration)
 https://github.com/sfdc-ben/digital-store-audit/tree/master/data
 
