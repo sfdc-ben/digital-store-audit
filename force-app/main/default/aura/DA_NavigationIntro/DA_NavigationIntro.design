@@ -1,0 +1,6 @@
+<design:component>
+	<design:attribute name="userName" label="User's Name (Input Only)"/>
+    <design:attribute name="icon" label="Header Icon - Utility (Input Only)"/>
+    <design:attribute name="greeting" label="Greeting befor user's name (Input Only)"/>
+    <design:attribute name="instruction" label="Instructions to users before menu (Input Only)"/>
+</design:component>

@@ -1,0 +1,8 @@
+<design:component>
+	<design:attribute name="status" label="Percentage Complete (Input Only)"/>
+    <design:attribute name="control1" label="Navigation Button 1 (Input Only)"/>
+    <design:attribute name="control2" label="Navigation Button 2 (Input Only)"/>
+    <design:attribute name="nav1" label="Button 1 Step (Input Only)"/>
+    <design:attribute name="nav2" label="Button 2 Step (Input Only)"/>
+    <design:attribute name="navOut" label="Nav Step Output (Output Only)"/>
+</design:component>

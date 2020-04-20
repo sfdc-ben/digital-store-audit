@@ -1,0 +1,100 @@
+<aura:component  implements="lightning:availableForFlowScreens" controller="storePicklistController" access="global">
+	<aura:attribute name="store" type="String" default=""/>
+    <aura:attribute name="date" type="String" default=""/>
+    <aura:attribute name="user" type="String" default=""/>
+    <aura:attribute name="storeList" type="String[]"/>
+    <aura:attribute name="storeEditMode" type="String" default="view"/>
+    <aura:attribute name="sourcePicklist" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div class="slds-m-top_small slds-m-bottom_small slds-p-around_small">
+    <lightning:layout>
+        <lightning:layoutItem size="4">
+            <div class="slds-media slds-p-bottom_x-small slds-media_center slds-border_bottom">
+                <div class="slds-media__figure">
+                    <lightning:icon iconName="utility:date_input" size="small"></lightning:icon>
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-text-align_left slds-text-heading_small">Digital Audit Date</div>
+                </div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+            <div class="slds-media slds-m-top_x-small slds-media_center">
+                <div class="slds-media__figure">
+                    <lightning:avatar alternativeText="" fallbackIconName="standard:goals" size="small" src="" variant="circle"></lightning:avatar>
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-text-align_left slds-text-title slds-text-color_default">{!v.date}</div>
+                </div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="4">
+            <div class="slds-media slds-p-bottom_x-small slds-media_center slds-border_bottom">
+                <div class="slds-media__figure">
+                    <lightning:icon iconName="utility:location" size="small"></lightning:icon>
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-text-align_left slds-text-heading_small">Store Location</div>
+                </div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+            
+            <!-- Store Media -->
+            <div class="slds-media slds-m-top_x-small slds-media_center">
+                <div class="slds-media__figure">
+                    <lightning:avatar alternativeText="" fallbackIconName="standard:address" size="small" src="" variant="circle"></lightning:avatar>
+                </div>
+                <aura:if isTrue="{!v.storeEditMode == 'view'}">
+                	<div class="slds-media__body">
+                    	<div class="slds-text-align_left slds-text-title slds-text-color_default">{!v.store}</div>
+                	</div>
+                	<div class="slds-media__figure slds-media__figure_reverse slds-p-right_large">
+                		<lightning:icon iconName="utility:edit" size="x-small" onclick="{!c.editStore}"></lightning:icon>
+                	</div>
+                <aura:set attribute="else">
+                    <div class="slds-media__body">
+                    	<lightning:select class="hide-header slds-form-element__label" aura:id="stores" label="Stores" variant="label-hidden" value="{!v.store}" onchange="{!c.storeValueChange}">
+                    		<aura:iteration items="{!v.storeList}" var="storeListItem" indexVar="i">
+								<aura:if isTrue="{!storeListItem == v.store}">
+                        			<option value="{!storeListItem}" selected="true">{!storeListItem}</option>
+                        		<aura:set attribute="else">
+                        			<option value="{!storeListItem}">{!storeListItem}</option>    
+                        		</aura:set>
+                        		</aura:if>
+                    		</aura:iteration>
+                		</lightning:select>
+                	</div>
+                	<div class="slds-media__figure slds-media__figure_reverse slds-p-right_large">
+                	</div>
+                </aura:set>
+                </aura:if>
+            </div>
+            <!-- Store Media END -->
+            
+        </lightning:layoutItem>
+        <lightning:layoutItem size="4">
+            <div class="slds-media slds-p-bottom_x-small slds-media_center slds-border_bottom">
+                <div class="slds-media__figure">
+                    <lightning:icon iconName="utility:identity" size="small"></lightning:icon>
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-text-align_left slds-text-heading_small">Employee Responsible</div>
+                </div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+            <div class="slds-media slds-m-top_x-small slds-media_center">
+                <div class="slds-media__figure">
+                    <lightning:avatar alternativeText="" fallbackIconName="standard:user" size="small" src="" variant="circle"></lightning:avatar>
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-text-align_left slds-text-title slds-text-color_default">{!v.user}</div>
+                </div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+</div>
+    
+</aura:component>

@@ -1,0 +1,6 @@
+<design:component>
+	<design:attribute name="store" label="Store for Digital Audit (Input Only)"/>
+    <design:attribute name="date" label="Date of Digital Audit (Input Only)"/>
+    <design:attribute name="user" label="Employee Responsible for Digital Audit (Input Only)"/>
+    <design:attribute name="sourcePicklist" label="API Name for the Source Picklist for Store (Input Only)"/>
+</design:component>

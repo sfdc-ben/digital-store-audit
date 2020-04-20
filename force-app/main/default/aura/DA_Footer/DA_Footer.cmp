@@ -1,0 +1,29 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global">
+	<aura:attribute name="status" type="String" default="0"/>
+    <aura:attribute name="control1" type="String" default="Start"/>
+    <aura:attribute name="control2" type="String" default="Finish"/>
+    <aura:attribute name="nav1" type="String" default=""/>
+    <aura:attribute name="nav2" type="String" default=""/>
+    <aura:attribute name="navOut" type="String" default=""/>
+    
+    <div>
+    <div class="slds-media slds-p-around_small slds-p-top_small slds-p-right_small slds-p-bottom_small slds-p-left_small slds-border_top">
+        <div class="slds-media__figure"></div>
+        <div class="slds-media__body">
+            <div class="slds-p-around_small">
+                <lightning:progressBar variant="circular" value="{!v.status}" size="medium"></lightning:progressBar>
+            </div>
+        </div>
+        <div class="slds-media__figure slds-media__figure_reverse">
+            <lightning:buttonGroup class="slds-button-group-row">
+                <div class="slds-button-group-item" onclick="{!c.navigate1}">
+                    <lightning:button class="slds-theme_brand" iconPosition="right" variant="brand" label="{!v.control1}" iconName="standard:goals"></lightning:button>
+                </div>
+                <div class="slds-button-group-item" onclick="{!c.navigate2}">
+                    <lightning:button class="slds-theme_brand" iconPosition="right" variant="brand" label="{!v.control2}" iconName="utility:send"></lightning:button>
+                </div>
+            </lightning:buttonGroup>
+        </div>
+    </div>
+</div>
+</aura:component>

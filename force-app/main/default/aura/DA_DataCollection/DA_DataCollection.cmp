@@ -1,0 +1,120 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global">
+	<aura:attribute name="integerData1" type="Integer" default=""/>
+    <aura:attribute name="integerData2" type="Integer" default=""/>
+    <aura:attribute name="integerData3" type="Integer" default=""/>
+    <aura:attribute name="integerData4" type="Integer" default=""/>
+    <aura:attribute name="integerData5" type="Integer" default=""/>
+    <aura:attribute name="integerData6" type="Integer" default=""/>
+    <aura:attribute name="booleanData1" type="Boolean" default=""/>
+    <aura:attribute name="booleanData2" type="Boolean" default=""/>
+    <aura:attribute name="booleanData3" type="Boolean" default=""/>
+    <aura:attribute name="booleanData4" type="Boolean" default=""/>
+    <aura:attribute name="textData1" type="String" default=""/>
+    <aura:attribute name="textData2" type="String" default=""/>
+    <aura:attribute name="textData3" type="String" default=""/>
+    <aura:attribute name="textData4" type="String" default=""/>
+    
+    <aura:attribute name="integerLabel1" type="String" default=""/>
+    <aura:attribute name="integerLabel2" type="String" default=""/>
+    <aura:attribute name="integerLabel3" type="String" default=""/>
+    <aura:attribute name="integerLabel4" type="String" default=""/>
+    <aura:attribute name="integerLabel5" type="String" default=""/>
+    <aura:attribute name="integerLabel6" type="String" default=""/>
+    <aura:attribute name="booleanLabel1" type="String" default=""/>
+    <aura:attribute name="booleanLabel2" type="String" default=""/>
+    <aura:attribute name="booleanLabel3" type="String" default=""/>
+    <aura:attribute name="booleanLabel4" type="String" default=""/>
+    <aura:attribute name="textLabel1" type="String" default=""/>
+    <aura:attribute name="textLabel2" type="String" default=""/>
+    <aura:attribute name="textLabel3" type="String" default=""/>
+    <aura:attribute name="textLabel4" type="String" default=""/>
+      
+    <aura:attribute name="complete"  type="Boolean" default=""/>
+	<aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
+
+	    
+    <lightning:tabset variant="vertical" class="slds-m-top_x-small slds-m-bottom_x-small">
+    <lightning:tab id="-LjHoH0yhLDhTbTXcXg1" label="Data Collection">
+        <div>
+            <lightning:layout class="slds-m-bottom_x-small" multipleRows="true">
+                <aura:if isTrue="{!v.booleanLabel1}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.integerLabel1}" type="number" value="{!v.integerData1}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.integerLabel2}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.integerLabel2}" type="number" value="{!v.integerData2}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.integerLabel3}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.integerLabel3}" type="number" value="{!v.integerData3}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.integerLabel4}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.integerLabel4}" type="number" value="{!v.integerData4}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.integerLabel5}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.integerLabel5}" type="number" value="{!v.integerData5}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.integerLabel6}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.integerLabel6}" type="number" value="{!v.integerData6}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+            </lightning:layout>
+            
+            <lightning:layout class="slds-m-bottom_x-small" multipleRows="true">
+                <aura:if isTrue="{!v.booleanLabel1}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.booleanLabel1}" type="toggle" checked="{!v.booleanData1}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.booleanLabel2}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.booleanLabel2}" type="toggle" checked="{!v.booleanData2}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.booleanLabel3}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.booleanLabel3}" type="toggle" checked="{!v.booleanData3}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.booleanLabel4}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.booleanLabel4}" type="toggle" checked="{!v.booleanData4}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+            </lightning:layout>
+            
+            <lightning:layout class="slds-m-bottom_x-small" multipleRows="true">
+                <aura:if isTrue="{!v.textLabel1}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.textLabel1}" value="{!v.textData1}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.textLabel2}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.textLabel2}" value="{!v.textData2}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.textLabel3}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.textLabel3}" value="{!v.textData3}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.textLabel4}">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input label="{!v.textLabel4}" value="{!v.textData4}" variant="standard" step="0.01"></lightning:input>
+                </lightning:layoutItem>
+                </aura:if>
+            </lightning:layout>
+        </div>
+    </lightning:tab>
+</lightning:tabset>
+</aura:component>

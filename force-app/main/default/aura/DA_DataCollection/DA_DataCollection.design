@@ -1,0 +1,31 @@
+<design:component>
+    <design:attribute name="integerData1" label="Number Field 1 Variable "/>
+    <design:attribute name="integerLabel1" label="Number Field 1 Label (Input Only)"/>
+    <design:attribute name="integerData2" label="Number Field 2 Variable "/>
+    <design:attribute name="integerLabel2" label="Number Field 2 Label (Input Only)"/>
+    <design:attribute name="integerData3" label="Number Field 3 Variable "/>
+    <design:attribute name="integerLabel3" label="Number Field 3 Label (Input Only)"/>
+    <design:attribute name="integerData4" label="Number Field 4 Variable "/>
+    <design:attribute name="integerLabel4" label="Number Field 4 Label (Input Only)"/>
+    <design:attribute name="integerData5" label="Number Field 5 Variable "/>
+    <design:attribute name="integerLabel5" label="Number Field 5 Label (Input Only)"/>
+    <design:attribute name="integerData6" label="Number Field 6 Variable "/>
+    <design:attribute name="integerLabel6" label="Number Field 6 Label (Input Only)"/>
+    <design:attribute name="booleanData1" label="Boolean Field 1 Variable "/>
+    <design:attribute name="booleanLabel1" label="Boolean Field 1 Label (Input Only)"/>
+    <design:attribute name="booleanData2" label="Boolean Field 2 Variable "/>
+    <design:attribute name="booleanLabel2" label="Boolean Field 2 Label (Input Only)"/>
+    <design:attribute name="booleanData3" label="Boolean Field 3 Variable "/>
+    <design:attribute name="booleanLabel3" label="Boolean Field 3 Label (Input Only)"/>
+    <design:attribute name="booleanData4" label="Boolean Field 4 Variable "/>
+    <design:attribute name="booleanLabel4" label="Boolean Field 4 Label (Input Only)"/>
+    <design:attribute name="textData1" label="Text Field 1 Variable "/>
+    <design:attribute name="textLabel1" label="Text Field 1 Label (Input Only)"/>
+    <design:attribute name="textData2" label="Text Field 2 Variable "/>
+    <design:attribute name="textLabel2" label="Text Field 2 Label (Input Only)"/>
+    <design:attribute name="textData3" label="Text Field 3 Variable "/>
+    <design:attribute name="textLabel3" label="Text Field 3 Label (Input Only)"/>
+    <design:attribute name="textData4" label="Text Field 4 Variable "/>
+    <design:attribute name="textLabel4" label="Text Field 4 Label (Input Only)"/>
+    <design:attribute name="complete" label="Step Completed (Output Only)"/>
+</design:component>

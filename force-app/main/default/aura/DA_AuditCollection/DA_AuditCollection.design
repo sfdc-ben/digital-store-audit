@@ -1,0 +1,28 @@
+<design:component>
+	<design:attribute name="tabName1" label="Tab Name 1 (Input Only)"/>
+    <design:attribute name="tabName2" label="Tab Name 2 (Input Only)"/>
+    <design:attribute name="tabName3" label="Tab Name 3 (Input Only)"/>
+    <design:attribute name="tabName4" label="Tab Name 4 (Input Only)"/>
+    <design:attribute name="tabName5" label="Tab Name 5 (Input Only)"/>
+    
+    <design:attribute name="deptExp1" label="Expectations 1 (Input Only)"/>
+    <design:attribute name="deptExp2" label="Expectations 2 (Input Only)"/>
+    <design:attribute name="deptExp3" label="Expectations 3 (Input Only)"/>
+    <design:attribute name="deptExp4" label="Expectations 4 (Input Only)"/>
+    <design:attribute name="deptExp5" label="Expectations 5 (Input Only)"/>
+    
+    <design:attribute name="rating1" label="Rating 1 (Output Only)"/>
+    <design:attribute name="rating2" label="Rating 2 (Output Only)"/>
+    <design:attribute name="rating3" label="Rating 3 (Output Only)"/>
+    <design:attribute name="rating4" label="Rating 4 (Output Only)"/>
+    <design:attribute name="rating5" label="Rating 5 (Output Only)"/>
+    
+    <design:attribute name="comments1" label="Comments 1 (Output Only)"/>
+    <design:attribute name="comments2" label="Comments 2 (Output Only)"/>
+    <design:attribute name="comments3" label="Comments 3 (Output Only)"/>
+    <design:attribute name="comments4" label="Comments 4 (Output Only)"/>
+    <design:attribute name="comments5" label="Comments 5 (Output Only)"/>
+    
+    <design:attribute name="complete" label="Completed Step (Output Only)"/>
+    
+</design:component>

@@ -1,0 +1,36 @@
+<design:component>
+	<design:attribute name="stepname1" label="Step 1 Walk Step Name (Input Only)"/>
+    <design:attribute name="step1" label="Step 1 Completion Status (Input Only)"/>
+    <design:attribute name="stepname2" label="Step 2 Walk Step Name (Input Only)"/>
+    <design:attribute name="step2" label="Step 2 Completion Status (Input Only)"/>
+    <design:attribute name="stepname3" label="Step 3 Walk Step Name (Input Only)"/>
+    <design:attribute name="step3" label="Step 3 Completion Status (Input Only)"/>
+    <design:attribute name="stepname4" label="Step 4 Walk Step Name (Input Only)"/>
+    <design:attribute name="step4" label="Step 4 Completion Status (Input Only)"/>
+    <design:attribute name="stepname5" label="Step 5 Walk Step Name (Input Only)"/>
+    <design:attribute name="step5" label="Step 5 Completion Status (Input Only)"/>
+    <design:attribute name="stepname6" label="Step 6 Walk Step Name (Input Only)"/>
+    <design:attribute name="step6" label="Step 6 Completion Status (Input Only)"/>
+    <design:attribute name="stepname7" label="Step 7 Walk Step Name (Input Only)"/>
+    <design:attribute name="step7" label="Step 7 Completion Status (Input Only)"/>
+    <design:attribute name="stepname8" label="Step 8 Walk Step Name (Input Only)"/>
+    <design:attribute name="step8" label="Step 8 Completion Status (Input Only)"/>
+    <design:attribute name="stepname9" label="Step 9 Walk Step Name (Input Only)"/>
+    <design:attribute name="step9" label="Step 9 Completion Status (Input Only)"/>
+    <design:attribute name="stepname10" label="Step 10 Walk Step Name (Input Only)"/>
+    <design:attribute name="step10" label="Step 10 Completion Status (Input Only)"/>
+
+    <design:attribute name="steplink1" label="Button 1 Step (Input Only)"/>
+    <design:attribute name="steplink2" label="Button 2 Step (Input Only)"/>
+    <design:attribute name="steplink3" label="Button 3 Step (Input Only)"/>
+    <design:attribute name="steplink4" label="Button 4 Step (Input Only)"/>
+    <design:attribute name="steplink5" label="Button 5 Step (Input Only)"/>
+    <design:attribute name="steplink6" label="Button 6 Step (Input Only)"/>
+    <design:attribute name="steplink7" label="Button 7 Step (Input Only)"/>
+    <design:attribute name="steplink8" label="Button 8 Step (Input Only)"/>
+    <design:attribute name="steplink9" label="Button 9 Step (Input Only)"/>
+    <design:attribute name="steplink10" label="Button 10 Step (Input Only)"/>
+    <design:attribute name="steplinkOut" label="Nav Step Output (Output Only)"/>
+    <design:attribute name="userName" label="User's Name (Input Only)"/>
+    
+</design:component>

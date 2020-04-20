@@ -1,0 +1,205 @@
+<aura:component  implements="lightning:availableForFlowScreens" access="global">
+    <aura:attribute name="tabName1" type="String" default=""/>
+    <aura:attribute name="tabName2" type="String" default=""/>
+    <aura:attribute name="tabName3" type="String" default=""/>
+    <aura:attribute name="tabName4" type="String" default=""/>
+    <aura:attribute name="tabName5" type="String" default=""/>
+    
+    <aura:attribute name="deptExp1" type="String" default=""/>
+    <aura:attribute name="deptExp2" type="String" default=""/>
+    <aura:attribute name="deptExp3" type="String" default=""/>
+    <aura:attribute name="deptExp4" type="String" default=""/>
+	<aura:attribute name="deptExp5" type="String" default=""/>
+    
+    <aura:attribute name="options" type="List" default="[{'label':'0','value':'0'},{'label':'1','value':'1'},{'label':'2','value':'2'},{'label':'3','value':'3'},{'label':'4','value':'4'},{'label':'5','value':'5'},{'label':'6','value':'6'},{'label':'7','value':'7'},{'label':'8','value':'8'},{'label':'9','value':'9'},{'label':'10','value':'10'}]"/>
+    
+    <aura:attribute name="rating1" type="Integer" default=""/>
+    <aura:attribute name="rating2" type="Integer" default=""/>
+    <aura:attribute name="rating3" type="Integer" default=""/>
+    <aura:attribute name="rating4" type="Integer" default=""/>
+	<aura:attribute name="rating5" type="Integer" default=""/>
+    
+    <aura:attribute name="rat1" type="String" default=""/>
+    <aura:attribute name="rat2" type="String" default=""/>
+    <aura:attribute name="rat3" type="String" default=""/>
+    <aura:attribute name="rat4" type="String" default=""/>
+	<aura:attribute name="rat5" type="String" default=""/>
+     
+    <aura:attribute name="comments1" type="String" default=""/>
+    <aura:attribute name="comments2" type="String" default=""/>
+    <aura:attribute name="comments3" type="String" default=""/>
+    <aura:attribute name="comments4" type="String" default=""/>
+	<aura:attribute name="comments5" type="String" default=""/>
+    
+    <aura:attribute name="complete"  type="Boolean" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <lightning:tabset variant="vertical" class="slds-m-top_x-small slds-m-bottom_x-small">
+    <lightning:tab id="-LjHoH0yhLDhTbTXcXg2" label="{!v.tabName1}">
+        <div>
+            <div class="dialog-box slds-m-bottom_medium slds-p-around_medium slds-card slds-card_boundary">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <lightning:icon iconName="utility:info" size="x-small"></lightning:icon>
+            </div>
+            <div class="slds-media__body">
+                <div style="font-size: 0.8125rem;"><b>Expectations</b></div>
+                <lightning:formattedRichText value="{!v.deptExp1}" />
+            </div>
+            <div class="slds-media__figure slds-media__figure_reverse"></div>
+        </div>
+    </div>
+    <div class="slds-m-bottom_small">
+        <div class="slds-m-bottom_x-small slds-text-heading_small">Rating</div>
+        
+        <lightning:radioGroup label="Select One" 
+                              options="{!v.options}" 
+                              value="{!v.rat1}" 
+                              type="button" 
+                              onchange="{!c.calcComplete}"></lightning:radioGroup>
+    </div>
+    <div class="slds-m-bottom_x-small slds-text-heading_small">Comments</div>
+    <lightning:layout>
+        <lightning:layoutItem size="12">
+            <lightning:inputRichText placeholder="Comments" variant="bottom-toolbar" label="Comments" value="{!v.comments1}"></lightning:inputRichText>
+        </lightning:layoutItem>
+    </lightning:layout>
+        </div>
+    </lightning:tab>
+    
+    <aura:if isTrue="{!v.tabName2}">    
+    <lightning:tab id="-LjHoH0yhLDhTbTXcXg3" label="{!v.tabName2}">
+        <div>
+            <div class="dialog-box slds-m-bottom_medium slds-p-around_medium slds-card slds-card_boundary">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <lightning:icon iconName="utility:info" size="x-small"></lightning:icon>
+            </div>
+            <div class="slds-media__body">
+                <div style="font-size: 0.8125rem;"><b>Expectations</b></div>
+                <lightning:formattedRichText value="{!v.deptExp2}" />
+            </div>
+            <div class="slds-media__figure slds-media__figure_reverse"></div>
+        </div>
+    </div>
+    <div class="slds-m-bottom_small">
+        <div class="slds-m-bottom_x-small slds-text-heading_small">Rating</div>
+        
+        <lightning:radioGroup label="Select One"
+                              options="{!v.options}" 
+                              value="{!v.rat2}" 
+                              type="button" 
+                              onchange="{!c.calcComplete}"></lightning:radioGroup>
+    </div>
+    <div class="slds-m-bottom_x-small slds-text-heading_small">Comments</div>
+    <lightning:layout>
+        <lightning:layoutItem size="12">
+            <lightning:inputRichText placeholder="Comments" variant="bottom-toolbar" label="Comments" value="{!v.comments2}"></lightning:inputRichText>
+        </lightning:layoutItem>
+    </lightning:layout>
+        </div>
+    </lightning:tab>
+        
+    </aura:if>
+    <aura:if isTrue="{!v.tabName3}">    
+    <lightning:tab id="-LjHoH0yhLDhTbTXcXg4" label="{!v.tabName3}">
+        <div>
+            <div class="dialog-box slds-m-bottom_medium slds-p-around_medium slds-card slds-card_boundary">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <lightning:icon iconName="utility:info" size="x-small"></lightning:icon>
+            </div>
+            <div class="slds-media__body">
+                <div style="font-size: 0.8125rem;"><b>Expectations</b></div>
+                <lightning:formattedRichText value="{!v.deptExp3}" />
+            </div>
+            <div class="slds-media__figure slds-media__figure_reverse"></div>
+        </div>
+    </div>
+    <div class="slds-m-bottom_small">
+        <div class="slds-m-bottom_x-small slds-text-heading_small">Rating</div>
+        
+        <lightning:radioGroup label="Select One" 
+                              options="{!v.options}" 
+                              value="{!v.rat3}" 
+                              type="button" 
+                              onchange="{!c.calcComplete}"></lightning:radioGroup>
+    </div>
+    <div class="slds-m-bottom_x-small slds-text-heading_small">Comments</div>
+    <lightning:layout>
+        <lightning:layoutItem size="12">
+            <lightning:inputRichText placeholder="Comments" variant="bottom-toolbar" label="Comments" value="{!v.comments3}"></lightning:inputRichText>
+        </lightning:layoutItem>
+    </lightning:layout>
+        </div>
+    </lightning:tab>
+    </aura:if>
+    <aura:if isTrue="{!v.tabName4}">    
+    <lightning:tab id="-LjHoH0yhLDhTbTXcXg5" label="{!v.tabName4}">
+        <div>
+            <div class="dialog-box slds-m-bottom_medium slds-p-around_medium slds-card slds-card_boundary">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <lightning:icon iconName="utility:info" size="x-small"></lightning:icon>
+            </div>
+            <div class="slds-media__body">
+                <div style="font-size: 0.8125rem;"><b>Expectations</b></div>
+                <lightning:formattedRichText value="{!v.deptExp4}" />
+            </div>
+            <div class="slds-media__figure slds-media__figure_reverse"></div>
+        </div>
+    </div>
+    <div class="slds-m-bottom_small">
+        <div class="slds-m-bottom_x-small slds-text-heading_small">Rating</div>
+        
+        <lightning:radioGroup label="Select One" 
+                              options="{!v.options}" 
+                              value="{!v.rat4}" 
+                              type="button" 
+                              onchange="{!c.calcComplete}"></lightning:radioGroup>
+    </div>
+    <div class="slds-m-bottom_x-small slds-text-heading_small">Comments</div>
+    <lightning:layout>
+        <lightning:layoutItem size="12">
+            <lightning:inputRichText placeholder="Comments" variant="bottom-toolbar" label="Comments" value="{!v.comments4}"></lightning:inputRichText>
+        </lightning:layoutItem>
+    </lightning:layout>
+        </div>
+    </lightning:tab>
+    </aura:if>
+    <aura:if isTrue="{!v.tabName5}">    
+    <lightning:tab id="-LjHoH0yhLDhTbTXcXg6" label="{!v.tabName5}">
+        <div>
+            <div class="dialog-box slds-m-bottom_medium slds-p-around_medium slds-card slds-card_boundary">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <lightning:icon iconName="utility:info" size="x-small"></lightning:icon>
+            </div>
+            <div class="slds-media__body">
+                <div style="font-size: 0.8125rem;"><b>Expectations</b></div>
+                <lightning:formattedRichText value="{!v.deptExp5}" />
+            </div>
+            <div class="slds-media__figure slds-media__figure_reverse"></div>
+        </div>
+    </div>
+    <div class="slds-m-bottom_small">
+        <div class="slds-m-bottom_x-small slds-text-heading_small">Rating</div>
+        
+        <lightning:radioGroup label="Select One" 
+                              options="{!v.options}" 
+                              value="{!v.rat5}" 
+                              type="button" 
+                              onchange="{!c.calcComplete}"></lightning:radioGroup>
+    </div>
+    <div class="slds-m-bottom_x-small slds-text-heading_small">Comments</div>
+    <lightning:layout>
+        <lightning:layoutItem size="12">
+            <lightning:inputRichText placeholder="Comments" variant="bottom-toolbar" label="Comments" value="{!v.comments5}"></lightning:inputRichText>
+        </lightning:layoutItem>
+    </lightning:layout>
+        </div>
+    </lightning:tab>
+    </aura:if>
+	</lightning:tabset>
+</aura:component>

@@ -1,0 +1,19 @@
+<aura:component  implements="lightning:availableForFlowScreens" access="global">
+    <aura:attribute name="userName" type="String" default=""/>
+    <aura:attribute name="icon" type="String" default="utility:trailhead"/>
+    <aura:attribute name="greeting" type="String" default="Hi there, "/>
+    <aura:attribute name="instruction" type="String"/>
+    
+    <div class="slds-p-around_small">
+    <div class="slds-media">
+        <div class="slds-media__figure">
+            <lightning:icon iconName="{!v.icon}" size="medium"></lightning:icon>
+        </div>
+        <div class="slds-media__body">
+            <div class="slds-m-bottom_x-small slds-text-heading_medium">{!v.greeting} {!v.userName}!</div>
+        </div>
+        <div class="slds-media__figure slds-media__figure_reverse"></div>
+    </div>
+    <div class="slds-text-title slds-text-color_default">{!v.instruction}</div>
+    </div>
+</aura:component>

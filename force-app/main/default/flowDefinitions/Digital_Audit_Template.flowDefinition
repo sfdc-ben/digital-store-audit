@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A flow template designed to get you started building a Digital Store Audit for your business. Let&apos;s go!</description>
+    <masterLabel>(BUILD) Digital Audit: Template</masterLabel>
+</FlowDefinition>

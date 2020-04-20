@@ -1,0 +1,20 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global">
+	<aura:attribute name="store" type="String" default=""/>
+    <aura:attribute name="date" type="String" default=""/>
+    <aura:attribute name="title" type="String" default=""/>
+    <aura:attribute name="category" type="String" default="Digital Audit"/>
+    
+    <div class="slds-media slds-p-around_small slds-p-top_small slds-p-right_small slds-p-bottom_small slds-p-left_small slds-media_center slds-border_bottom">
+    <div class="slds-media__figure">
+        <lightning:icon iconName="standard:planogram" size="slds-icon_medium" variant="inverse"></lightning:icon>
+    </div>
+    <div class="slds-media__body">
+        <div class="slds-text-title slds-text-color_default">{!v.category}</div>
+        <div class="slds-m-bottom_none slds-p-around_none slds-p-top_none slds-p-right_none slds-p-bottom_none slds-p-left_none slds-text-align_left slds-text-heading_small">{!v.title}</div>
+    </div>
+    <div class="slds-media__figure slds-media__figure_reverse">
+        
+    </div>
+</div>
+    
+</aura:component>

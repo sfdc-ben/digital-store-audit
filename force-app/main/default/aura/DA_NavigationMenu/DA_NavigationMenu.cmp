@@ -1,0 +1,422 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global">
+	<aura:attribute name="step1" type="Boolean" default="false"/>
+    <aura:attribute name="step2" type="Boolean" default="false"/>
+    <aura:attribute name="step3" type="Boolean" default="false"/>
+    <aura:attribute name="step4" type="Boolean" default="false"/>
+    <aura:attribute name="step5" type="Boolean" default="false"/>
+    <aura:attribute name="step6" type="Boolean" default="false"/>
+    <aura:attribute name="step7" type="Boolean" default="false"/>
+    <aura:attribute name="step8" type="Boolean" default="false"/>
+    <aura:attribute name="step9" type="Boolean" default="false"/>
+    <aura:attribute name="step10" type="Boolean" default="false"/>
+    
+    <aura:attribute name="stepname1" type="String" default=""/>
+    <aura:attribute name="stepname2" type="String" default=""/>
+    <aura:attribute name="stepname3" type="String" default=""/>
+    <aura:attribute name="stepname4" type="String" default=""/>
+    <aura:attribute name="stepname5" type="String" default=""/>
+    <aura:attribute name="stepname6" type="String" default=""/>
+    <aura:attribute name="stepname7" type="String" default=""/>
+    <aura:attribute name="stepname8" type="String" default=""/>
+    <aura:attribute name="stepname9" type="String" default=""/>
+    <aura:attribute name="stepname10" type="String" default=""/>
+    
+    <aura:attribute name="steplink1" type="String" default=""/>
+    <aura:attribute name="steplink2" type="String" default=""/>
+    <aura:attribute name="steplink3" type="String" default=""/>
+    <aura:attribute name="steplink4" type="String" default=""/>
+    <aura:attribute name="steplink5" type="String" default=""/>
+    <aura:attribute name="steplink6" type="String" default=""/>
+    <aura:attribute name="steplink7" type="String" default=""/>
+    <aura:attribute name="steplink8" type="String" default=""/>
+    <aura:attribute name="steplink9" type="String" default=""/>
+    <aura:attribute name="steplink10" type="String" default=""/>
+    <aura:attribute name="steplinkOut" type="String" default=""/>
+    <aura:attribute name="userName" type="String" default=""/>
+    
+    <div class="slds-p-around_small">
+    <ul class="slds-list_vertical-space-medium">
+        <aura:if isTrue="{!v.stepname1}">
+            <li class="slds-item" onclick="{!c.linknav1}">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step1}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname1}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname2}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step2}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav2}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname2}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname3}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step3}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav3}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname3}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname4}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step4}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav4}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname4}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname5}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step5}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav5}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname5}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname6}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step6}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav6}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname6}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname7}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step7}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav7}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname7}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname8}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step8}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">8</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav8}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname8}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname9}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step9}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav9}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname9}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+        <aura:if isTrue="{!v.stepname10}">
+            <li class="slds-item">
+            <div class="slds-media slds-media_center">
+                <aura:if isTrue="{!v.step10}">
+                
+                <div class="slds-media__figure">
+                    <div>
+                        <div class="slds-progress-ring slds-progress-ring_large    slds-progress-ring_complete">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar">
+                               	</div>
+                            <div class="slds-progress-ring__content">
+                                <lightning:icon iconName="utility:check" size="small"></lightning:icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <aura:set attribute="else">
+                    
+                <div class="slds-media__figure">
+                    <div class="slds-theme_default">
+                        <div class="slds-progress-ring slds-progress-ring_large    ">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="slds-progress-ring__progress" role="progressbar"></div>
+                            <div class="slds-progress-ring__content">
+                               <div class="slds-text-title slds-text-color_default">10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    </aura:set>
+                </aura:if>
+                    
+                <div class="slds-media__body" onclick="{!c.linknav10}"><a href="javascript:void(0);" class=" slds-text-link">{!v.stepname10}</a></div>
+                <div class="slds-media__figure slds-media__figure_reverse"></div>
+            </div>
+        </li>
+        </aura:if>
+    </ul>
+</div>
+    
+</aura:component>
